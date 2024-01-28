@@ -29,7 +29,9 @@ export default class DefaultLayout extends React.Component {
       <Layout>
         <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
           <div className="logo">
-            <h1 className="text-center text-light font-wight-bold mt-4">POS</h1>
+            <h1 className="text-center text-light font-wight-bold mt-4">
+              Jai Shree
+            </h1>
           </div>
           <Menu
             theme="dark"

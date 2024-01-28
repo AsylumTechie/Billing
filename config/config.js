@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 require("colors");
+mongoose.set("strictQuery", false);
 
 //connecDB Function
 

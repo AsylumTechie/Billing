@@ -2,12 +2,12 @@ const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const dotanv = require("dotenv");
+const dotenv = require("dotenv");
 const { bgCyan } = require("colors");
 require("colors");
 const connectDb = require("./config/config");
 //dotenv config
-dotanv.config();
+dotenv.config();
 //db config
 connectDb();
 //rest object
@@ -24,7 +24,7 @@ app.use(morgan("dev"));
 app.use("/api/items", require("./routes/itemRoutes"));
 
 //port
-const PORT = process.env.PORT || 8080;
+const PORT = 3000;
 
 //listen
 app.listen(PORT, () => {

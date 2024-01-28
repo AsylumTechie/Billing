@@ -7,6 +7,7 @@ require("colors");
 //config
 dotenv.config();
 connectDb();
+mongoose.set("strictQuery", false);
 
 //function seeder
 const importData = async () => {

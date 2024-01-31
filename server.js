@@ -24,7 +24,7 @@ app.use(morgan("dev"));
 app.use("/api/items", require("./routes/itemRoutes"));
 
 //port
-const PORT = 3000;
+const PORT = 8000;
 
 //listen
 app.listen(PORT, () => {
